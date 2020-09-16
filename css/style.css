@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: kalam, sans-serif;
+  -webkit-tap-highlight-color: none;
+}
+
+body {
+  background: -webkit-gradient(linear, right top, left top, from(rgba(26, 206, 238, 0.67)), to(#1aceee));
+  background: linear-gradient(to left, rgba(26, 206, 238, 0.67), #1aceee);
+  font-size: 1.5rem;
+  padding: 0.625em 6.25em 0.625em 0.625em;
+}
+
+h1 {
+  position: relative;
+  font-size: 3.5rem;
+}
+
+h1:before {
+  content: "";
+  position: absolute;
+  height: 6px;
+  width: 100%;
+  background: #fff;
+  bottom: 20px;
+  z-index: -1;
+}
+
+button {
+  margin-bottom: 20px;
+  padding: 0.25em 0.75em;
+  outline: none;
+  background: #00d9ff;
+  border: 3px solid rgba(0, 0, 0, 0.45);
+  border-radius: 10px;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.joke {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bubble {
+  display: inline-block;
+  position: relative;
+  padding: 1.875em 2.125em;
+  background: #fff;
+  border-radius: 10px;
+  border: 3px solid #000;
+  margin-bottom: 3.5em;
+}
+
+.bubble:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+  height: 50px;
+  width: 90px;
+  border-radius: 0 0 100%;
+  -webkit-box-shadow: -2px -2px 0 0 #000 inset, -23px 0 0 0 #fff inset, -25px -2px 0 0 #000 inset;
+          box-shadow: -2px -2px 0 0 #000 inset, -23px 0 0 0 #fff inset, -25px -2px 0 0 #000 inset;
+}
